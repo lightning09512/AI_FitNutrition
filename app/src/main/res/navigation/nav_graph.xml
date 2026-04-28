@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.nhom10.aifitnutrition.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/foodLogFragment"
+        android:name="com.nhom10.aifitnutrition.ui.food.FoodLogFragment"
+        android:label="Food Log"
+        tools:layout="@layout/fragment_food_log">
+        <action
+            android:id="@+id/action_food_to_camera"
+            app:destination="@id/foodCameraFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/foodCameraFragment"
+        android:name="com.nhom10.aifitnutrition.ui.food.FoodCameraFragment"
+        android:label="Scan Food"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_camera_to_food"
+            app:destination="@id/foodLogFragment"
+            app:popUpTo="@id/foodLogFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.nhom10.aifitnutrition.ui.workout.WorkoutFragment"
+        android:label="Workout"
+        tools:layout="@layout/fragment_workout">
+        <action
+            android:id="@+id/action_workout_to_player"
+            app:destination="@id/workoutPlayerFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/workoutPlayerFragment"
+        android:name="com.nhom10.aifitnutrition.ui.workout.WorkoutPlayerFragment"
+        android:label="Workout Player"
+        tools:layout="@layout/fragment_workout_player" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.nhom10.aifitnutrition.ui.chat.ChatFragment"
+        android:label="AI Coach"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.nhom10.aifitnutrition.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

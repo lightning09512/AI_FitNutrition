@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI FitNutrition</string>
+    <string name="app_tagline">Huấn Luyện Viên Sức Khỏe AI</string>
+
+
+    <!-- Bottom Navigation -->
+    <string name="nav_dashboard">Trang chủ</string>
+    <string name="nav_food">Dinh dưỡng</string>
+    <string name="nav_workout">Tập luyện</string>
+    <string name="nav_chat">AI Coach</string>
+    <string name="nav_profile">Hồ sơ</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Bảng điều khiển</string>
+    <string name="net_calories">Calo ròng</string>
+    <string name="calories_eaten">Đã ăn</string>
+    <string name="calories_burned">Đã đốt</string>
+    <string name="remaining">Còn lại</string>
+    <string name="macros">Dinh dưỡng</string>
+    <string name="protein">Đạm</string>
+    <string name="carbs">Tinh bột</string>
+    <string name="fat">Chất béo</string>
+    <string name="water_intake">Lượng nước</string>
+    <string name="weekly_progress">Tiến độ tuần</string>
+    <string name="today_s_summary">Tóm tắt hôm nay</string>
+    <string name="good_morning">Chào buổi sáng,</string>
+    <string name="good_afternoon">Chào buổi chiều,</string>
+    <string name="good_evening">Chào buổi tối,</string>
+
+    <!-- Food Logging -->
+    <string name="food_log">Nhật ký thức ăn</string>
+    <string name="breakfast">Bữa sáng</string>
+    <string name="lunch">Bữa trưa</string>
+    <string name="dinner">Bữa tối</string>
+    <string name="snacks">Ăn vặt</string>
+    <string name="add_food">Thêm thức ăn</string>
+    <string name="scan_food">Quét thức ăn</string>
+    <string name="manual_entry">Nhập thủ công</string>
+    <string name="analyzing">Đang phân tích thức ăn…</string>
+    <string name="analysis_complete">Phân tích xong</string>
+    <string name="confirm_log">Xác nhận &amp; Lưu</string>
+    <string name="food_name">Tên thức ăn</string>
+    <string name="portion_size">Khẩu phần</string>
+    <string name="calories">Calo</string>
+    <string name="kcal">kcal</string>
+    <string name="grams">g</string>
+    <string name="ml">ml</string>
+
+    <!-- Workout -->
+    <string name="workout">Tập luyện</string>
+    <string name="add_workout">Ghi tập luyện</string>
+    <string name="workout_programs">Chương trình tập</string>
+    <string name="start_selected_program">Bắt đầu chương trình đã chọn</string>
+    <string name="workout_running">Chạy bộ</string>
+    <string name="workout_cycling">Đạp xe</string>
+    <string name="workout_gym">Gym</string>
+    <string name="workout_walking">Đi bộ</string>
+    <string name="workout_swimming">Bơi lội</string>
+    <string name="workout_yoga">Yoga</string>
+    <string name="workout_hiit">HIIT</string>
+    <string name="duration_minutes">Thời gian (phút)</string>
+    <string name="intensity_light">Nhẹ</string>
+    <string name="intensity_moderate">Vừa</string>
+    <string name="intensity_intense">Nặng</string>
+    <string name="estimated_burn">Năng lượng đốt ước tính</string>
+    <string name="today_activity">Hoạt động hôm nay</string>
+    <string name="no_workout_today">Hôm nay chưa ghi buổi tập nào.\nCùng vận động nhé!</string>
+    <string name="workout_type">Loại</string>
+    <string name="duration">Thời gian</string>
+    <string name="minutes">phút</string>
+    <string name="intensity">Cường độ</string>
+
+    <!-- Chat -->
+    <string name="ai_coach">AI Coach</string>
+    <string name="powered_by_gemini">Được hỗ trợ bởi Gemini</string>
+    <string name="chat_clear">Xóa</string>
+    <string name="chat_suggest_workout">Gợi ý bài tập</string>
+    <string name="chat_meal_ideas">Gợi ý bữa ăn theo mục tiêu</string>
+    <string name="chat_analyze_progress">Phân tích tiến độ của tôi</string>
+    <string name="fitbot_thinking">FitBot đang suy nghĩ…</string>
+    <string name="chat_hint">Hỏi về sức khỏe của bạn…</string>
+    <string name="ai_greeting">Xin chào! Tôi là AI Health Coach được hỗ trợ bởi Gemini. Tôi có thể giúp gì cho bạn?</string>
+
+    <!-- Profile -->
+    <string name="profile">Hồ sơ</string>
+    <string name="your_name_default">Tên của bạn</string>
+    <string name="goal_format">Mục tiêu: %1$s</string>
+    <string name="kcal_per_day">kcal/ngày</string>
+    <string name="log_today_weight">Ghi cân nặng hôm nay</string>
+    <string name="weight_hint">ví dụ: 72.5</string>
+    <string name="weight_history_30_days">Lịch sử cân nặng (30 ngày)</string>
+    <string name="language_button">Ngôn ngữ</string>
+    <string name="export_health_report_pdf">Xuất báo cáo sức khỏe PDF</string>
+    <string name="edit_profile">Chỉnh sửa hồ sơ</string>
+    <string name="profile_goal_lose">Giảm cân</string>
+    <string name="profile_goal_gain">Tăng cơ</string>
+    <string name="profile_goal_maintain">Duy trì sức khỏe</string>
+    <string name="dialog_edit_goal">Chỉnh sửa mục tiêu</string>
+    <string name="dialog_language_title">Ngôn ngữ</string>
+    <string name="snackbar_enter_valid_weight">Vui lòng nhập cân nặng hợp lệ</string>
+    <string name="snackbar_no_profile_to_export">Không có dữ liệu hồ sơ để xuất</string>
+    <string name="snackbar_pdf_saved">Đã lưu PDF: %1$s</string>
+    <string name="snackbar_pdf_export_failed">Xuất PDF thất bại</string>
+    <string name="log">Ghi</string>
+    <string name="my_goal">Mục tiêu của tôi</string>
+    <string name="weight_history">Lịch sử cân nặng</string>
+    <string name="progress_photos">Ảnh tiến độ</string>
+    <string name="export_pdf">Xuất báo cáo PDF</string>
+    <string name="settings">Cài đặt</string>
+
+    <!-- Water -->
+    <string name="water_tracker">Theo dõi nước</string>
+    <string name="add_water">+ Thêm nước</string>
+    <string name="daily_water_goal">Mục tiêu hàng ngày: 2500ml</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Chào mừng đến AI FitNutrition</string>
+    <string name="onboarding_subtitle">Người bạn đồng hành sức khỏe thông minh</string>
+    <string name="your_name">Họ và tên</string>
+    <string name="age">Tuổi</string>
+    <string name="height">Chiều cao (cm)</string>
+    <string name="weight">Cân nặng (kg)</string>
+    <string name="your_goal">Mục tiêu của bạn</string>
+    <string name="goal_lose">Giảm cân</string>
+    <string name="goal_gain">Tăng cơ</string>
+    <string name="goal_maintain">Duy trì sức khỏe</string>
+    <string name="get_started">Bắt đầu</string>
+    <string name="onboarding_enter_name">Vui lòng nhập tên của bạn</string>
+    <string name="next">Tiếp theo</string>
+    <string name="save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="ok">OK</string>
+
+    <!-- Permissions -->
+    <string name="permission_camera">Cần quyền camera để phân tích thức ăn</string>
+    <string name="permission_denied">Quyền bị từ chối</string>
+
+    <!-- Misc -->
+    <string name="no_data">Chưa có dữ liệu</string>
+    <string name="loading">Đang tải…</string>
+    <string name="error_generic">Đã xảy ra lỗi. Vui lòng thử lại.</string>
+    <string name="export_success">Xuất PDF thành công!</string>
+
+    <!-- Language -->
+    <string name="language_settings">Ngôn ngữ</string>
+    <string name="lang_english">English</string>
+    <string name="lang_vietnamese">Tiếng Việt</string>
+    <string name="select_language">Chọn ngôn ngữ</string>
+</resources>

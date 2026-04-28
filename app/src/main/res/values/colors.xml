@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary dark background -->
+    <color name="bg_primary">#0D0F14</color>
+    <color name="bg_secondary">#151820</color>
+    <color name="bg_card">#1E2130</color>
+    <color name="bg_card_elevated">#252A3A</color>
+    <color name="bg_surface">#1A1D2B</color>
+
+    <!-- Accent colors -->
+    <color name="accent_teal">#00D4AA</color>
+    <color name="accent_teal_light">#4DFFD7</color>
+    <color name="accent_teal_dark">#009B7D</color>
+    <color name="accent_violet">#7C5CBF</color>
+    <color name="accent_violet_light">#A57EE8</color>
+    <color name="accent_orange">#FF6B35</color>
+    <color name="accent_pink">#FF4F8B</color>
+    <color name="accent_blue">#4C9EFF</color>
+    <color name="accent_yellow">#FFD166</color>
+    <color name="accent_green">#06D6A0</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B8CC</color>
+    <color name="text_tertiary">#6B7591</color>
+    <color name="text_accent">#00D4AA</color>
+
+    <!-- Macro colors -->
+    <color name="macro_protein">#4C9EFF</color>
+    <color name="macro_carbs">#FFD166</color>
+    <color name="macro_fat">#FF6B35</color>
+
+    <!-- Status colors -->
+    <color name="success">#06D6A0</color>
+    <color name="warning">#FFD166</color>
+    <color name="error">#FF4F8B</color>
+
+    <!-- Navigation -->
+    <color name="nav_bg">#12151F</color>
+    <color name="nav_indicator">#1E2D4A</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    <color name="scrim">#80000000</color>
+
+    <!-- Water color -->
+    <color name="water_blue">#4C9EFF</color>
+    <color name="water_bg">#0A1929</color>
+</resources>

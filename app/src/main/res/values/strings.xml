@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">AI FitNutrition</string>
+    <string name="app_tagline">Your AI-Powered Health Coach</string>
+
+
+    <!-- Bottom Navigation -->
+    <string name="nav_dashboard">Home</string>
+    <string name="nav_food">Nutrition</string>
+    <string name="nav_workout">Workout</string>
+    <string name="nav_chat">AI Coach</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Dashboard</string>
+    <string name="net_calories">Net Calories</string>
+    <string name="calories_eaten">Eaten</string>
+    <string name="calories_burned">Burned</string>
+    <string name="remaining">Remaining</string>
+    <string name="macros">Macros</string>
+    <string name="protein">Protein</string>
+    <string name="carbs">Carbs</string>
+    <string name="fat">Fat</string>
+    <string name="water_intake">Water Intake</string>
+    <string name="weekly_progress">Weekly Progress</string>
+    <string name="today_s_summary">Today\'s Summary</string>
+    <string name="good_morning">Good morning,</string>
+    <string name="good_afternoon">Good afternoon,</string>
+    <string name="good_evening">Good evening,</string>
+
+    <!-- Food Logging -->
+    <string name="food_log">Food Log</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="snacks">Snacks</string>
+    <string name="add_food">Add Food</string>
+    <string name="scan_food">Scan Food</string>
+    <string name="manual_entry">Manual Entry</string>
+    <string name="analyzing">Analyzing food…</string>
+    <string name="analysis_complete">Analysis Complete</string>
+    <string name="confirm_log">Confirm &amp; Log</string>
+    <string name="food_name">Food Name</string>
+    <string name="portion_size">Portion Size</string>
+    <string name="calories">Calories</string>
+    <string name="kcal">kcal</string>
+    <string name="grams">g</string>
+    <string name="ml">ml</string>
+
+    <!-- Workout -->
+    <string name="workout">Workout</string>
+    <string name="add_workout">Log Workout</string>
+    <string name="workout_programs">Workout Programs</string>
+    <string name="start_selected_program">Start Selected Program</string>
+    <string name="workout_running">Running</string>
+    <string name="workout_cycling">Cycling</string>
+    <string name="workout_gym">Gym</string>
+    <string name="workout_walking">Walking</string>
+    <string name="workout_swimming">Swimming</string>
+    <string name="workout_yoga">Yoga</string>
+    <string name="workout_hiit">HIIT</string>
+    <string name="duration_minutes">Duration (minutes)</string>
+    <string name="intensity_light">Light</string>
+    <string name="intensity_moderate">Moderate</string>
+    <string name="intensity_intense">Intense</string>
+    <string name="estimated_burn">Estimated burn</string>
+    <string name="today_activity">Today\'s Activity</string>
+    <string name="no_workout_today">No workouts logged today.\nKeep moving!</string>
+    <string name="workout_type">Type</string>
+    <string name="duration">Duration</string>
+    <string name="minutes">min</string>
+    <string name="intensity">Intensity</string>
+
+    <!-- Chat -->
+    <string name="ai_coach">AI Coach</string>
+    <string name="powered_by_gemini">Powered by Gemini</string>
+    <string name="chat_clear">Clear</string>
+    <string name="chat_suggest_workout">Suggest a workout</string>
+    <string name="chat_meal_ideas">Meal ideas for my goal</string>
+    <string name="chat_analyze_progress">Analyze my progress</string>
+    <string name="fitbot_thinking">FitBot is thinking…</string>
+    <string name="chat_hint">Ask your health question…</string>
+    <string name="ai_greeting">Hello! I\'m your AI Health Coach powered by Gemini. How can I help you today?</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="your_name_default">Your Name</string>
+    <string name="goal_format">Goal: %1$s</string>
+    <string name="kcal_per_day">kcal/day</string>
+    <string name="log_today_weight">Log Today\'s Weight</string>
+    <string name="weight_hint">e.g. 72.5</string>
+    <string name="weight_history_30_days">Weight History (30 days)</string>
+    <string name="language_button">Language</string>
+    <string name="export_health_report_pdf">Export Health Report PDF</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile_goal_lose">Lose Weight</string>
+    <string name="profile_goal_gain">Gain Muscle</string>
+    <string name="profile_goal_maintain">Stay Healthy</string>
+    <string name="dialog_edit_goal">Edit Goal</string>
+    <string name="dialog_language_title">Language</string>
+    <string name="snackbar_enter_valid_weight">Please enter a valid weight</string>
+    <string name="snackbar_no_profile_to_export">No profile data to export</string>
+    <string name="snackbar_pdf_saved">PDF saved: %1$s</string>
+    <string name="snackbar_pdf_export_failed">PDF export failed</string>
+    <string name="log">Log</string>
+    <string name="my_goal">My Goal</string>
+    <string name="weight_history">Weight History</string>
+    <string name="progress_photos">Progress Photos</string>
+    <string name="export_pdf">Export Report PDF</string>
+    <string name="settings">Settings</string>
+
+    <!-- Water -->
+    <string name="water_tracker">Water Tracker</string>
+    <string name="add_water">+ Add Water</string>
+    <string name="daily_water_goal">Daily Goal: 2500ml</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Welcome to AI FitNutrition</string>
+    <string name="onboarding_subtitle">Your intelligent health companion</string>
+    <string name="your_name">Your Name</string>
+    <string name="age">Age (years)</string>
+    <string name="height">Height (cm)</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="your_goal">Your Goal</string>
+    <string name="goal_lose">Lose Weight</string>
+    <string name="goal_gain">Gain Muscle</string>
+    <string name="goal_maintain">Stay Healthy</string>
+    <string name="get_started">Get Started</string>
+    <string name="onboarding_enter_name">Please enter your name</string>
+    <string name="next">Next</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <!-- Permissions -->
+    <string name="permission_camera">Camera permission is needed to analyze your food</string>
+    <string name="permission_denied">Permission denied</string>
+
+    <!-- Misc -->
+    <string name="no_data">No data yet</string>
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="export_success">PDF exported successfully!</string>
+
+    <!-- Language -->
+    <string name="language_settings">Language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_vietnamese">Tiếng Việt</string>
+    <string name="select_language">Select Language</string>
+</resources>

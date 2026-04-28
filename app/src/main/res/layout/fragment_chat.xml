@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_primary">
+
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingHorizontal="16dp"
+        android:paddingTop="24dp" android:paddingBottom="12dp" android:gravity="center_vertical">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/ai_coach"
+                android:textColor="@color/text_primary" android:textSize="24sp"
+                android:textStyle="bold" android:fontFamily="sans-serif-medium"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/powered_by_gemini"
+                android:textColor="@color/accent_teal" android:textSize="12sp"
+                android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClearChat"
+            android:layout_width="wrap_content" android:layout_height="36dp"
+            android:text="@string/chat_clear"
+            style="@style/Widget.AIFitNutrition.Button.Outline"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <!-- Suggested prompts -->
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:scrollbars="none" android:paddingHorizontal="16dp" android:paddingBottom="8dp"
+        android:clipToPadding="false">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+            <com.google.android.material.chip.Chip android:id="@+id/chipSuggest1"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/chat_suggest_workout"
+                style="@style/Widget.Material3.Chip.Suggestion"
+                android:textColor="@color/text_secondary" android:textSize="12sp"
+                app:chipBackgroundColor="@color/bg_card" android:layout_marginEnd="8dp"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipSuggest2"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/chat_meal_ideas"
+                style="@style/Widget.Material3.Chip.Suggestion"
+                android:textColor="@color/text_secondary" android:textSize="12sp"
+                app:chipBackgroundColor="@color/bg_card" android:layout_marginEnd="8dp"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipSuggest3"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/chat_analyze_progress"
+                style="@style/Widget.Material3.Chip.Suggestion"
+                android:textColor="@color/text_secondary" android:textSize="12sp"
+                app:chipBackgroundColor="@color/bg_card"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Chat messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="none"/>
+
+    <!-- Typing indicator -->
+    <LinearLayout android:id="@+id/layoutTyping"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp" android:gravity="center_vertical"
+        android:visibility="gone">
+        <ProgressBar android:layout_width="20dp" android:layout_height="20dp"
+            style="?android:attr/progressBarStyleSmall"
+            android:indeterminateTint="@color/accent_teal" android:layout_marginEnd="8dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="@string/fitbot_thinking"
+            android:textColor="@color/text_tertiary" android:textSize="12sp"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+    <!-- Input bar -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp" android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="@color/bg_card" app:cardCornerRadius="28dp"
+        app:cardElevation="0dp" app:strokeColor="@color/bg_card_elevated" app:strokeWidth="1dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingStart="16dp"
+            android:paddingEnd="6dp" android:paddingVertical="6dp" android:gravity="center_vertical">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMessage"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/chat_hint"
+                android:textColorHint="@color/text_tertiary"
+                android:textColor="@color/text_primary" android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:background="@null" android:maxLines="4"
+                android:imeOptions="actionSend"
+                android:inputType="textMultiLine|textCapSentences"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSend"
+                android:layout_width="44dp" android:layout_height="44dp"
+                android:padding="0dp"
+                app:backgroundTint="@color/accent_teal"
+                app:cornerRadius="22dp"
+                app:icon="@android:drawable/ic_menu_send"
+                app:iconTint="@color/bg_primary"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

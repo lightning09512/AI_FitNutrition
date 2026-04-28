@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingBottom="32dp">
+
+        <!-- Header -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:gravity="center"
+            android:paddingTop="56dp" android:paddingBottom="32dp">
+
+            <ImageView android:layout_width="72dp" android:layout_height="72dp"
+                android:src="@drawable/ic_splash_logo" android:layout_marginBottom="16dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Welcome to" android:textColor="@color/text_secondary"
+                android:textSize="16sp" android:fontFamily="sans-serif" android:layout_marginBottom="4dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="AI FitNutrition"
+                android:textColor="@color/text_primary" android:textSize="32sp"
+                android:textStyle="bold" android:fontFamily="sans-serif-medium"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Let's set up your personalized health profile"
+                android:textColor="@color/accent_teal" android:textSize="14sp"
+                android:fontFamily="sans-serif" android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Form Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" style="@style/Widget.AIFitNutrition.Card">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+
+                <!-- Name -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Your Name" android:textColor="@color/text_secondary"
+                    android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginBottom="6dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="@color/bg_card_elevated"
+                    app:boxStrokeColor="@color/bg_card_elevated"
+                    app:hintTextColor="@color/text_tertiary">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:hint="e.g. Alex Nguyen" android:textColor="@color/text_primary"
+                        android:textSize="15sp" android:fontFamily="sans-serif"
+                        android:inputType="textPersonName|textCapWords"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Age + Height row -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="16dp" android:weightSum="2">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="8dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Age" android:textColor="@color/text_secondary"
+                            android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginBottom="6dp"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:boxBackgroundColor="@color/bg_card_elevated"
+                            app:boxStrokeColor="@color/bg_card_elevated">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etAge"
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:hint="25" android:textColor="@color/text_primary"
+                                android:fontFamily="sans-serif" android:inputType="number"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="8dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Height (cm)" android:textColor="@color/text_secondary"
+                            android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginBottom="6dp"/>
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            app:boxBackgroundColor="@color/bg_card_elevated"
+                            app:boxStrokeColor="@color/bg_card_elevated">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etHeight"
+                                android:layout_width="match_parent" android:layout_height="wrap_content"
+                                android:hint="170" android:textColor="@color/text_primary"
+                                android:fontFamily="sans-serif" android:inputType="numberDecimal"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Weight -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Weight (kg)" android:textColor="@color/text_secondary"
+                    android:textSize="12sp" android:fontFamily="sans-serif" android:layout_marginBottom="6dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxBackgroundColor="@color/bg_card_elevated"
+                    app:boxStrokeColor="@color/bg_card_elevated">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etWeight"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:hint="70.0" android:textColor="@color/text_primary"
+                        android:fontFamily="sans-serif" android:inputType="numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Goal selection -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Your Goal" android:textColor="@color/text_primary"
+            android:textSize="16sp" android:textStyle="bold" android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="12dp"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupGoal"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            app:singleSelection="true" app:selectionRequired="true"
+            android:layout_marginBottom="32dp">
+            <com.google.android.material.chip.Chip android:id="@+id/chipLose"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Lose Weight" style="@style/Widget.Material3.Chip.Filter"
+                android:textColor="@color/text_primary"
+                app:chipBackgroundColor="@color/bg_card"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipGain"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Gain Muscle" style="@style/Widget.Material3.Chip.Filter"
+                android:textColor="@color/text_primary"
+                app:chipBackgroundColor="@color/bg_card"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chipMaintain"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Stay Healthy" style="@style/Widget.Material3.Chip.Filter"
+                android:textColor="@color/text_primary"
+                android:checked="true"
+                app:chipBackgroundColor="@color/bg_card"/>
+        </com.google.android.material.chip.ChipGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent" android:layout_height="60dp"
+            android:text="Get Started"
+            android:textSize="16sp"
+            style="@style/Widget.AIFitNutrition.Button.Primary"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
