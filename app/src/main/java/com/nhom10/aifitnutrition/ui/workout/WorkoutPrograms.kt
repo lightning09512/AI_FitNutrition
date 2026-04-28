@@ -169,7 +169,14 @@ object WorkoutPrograms {
                 val target = it.defaultDurationSec?.let { sec -> "${sec}s" }
                     ?: "${it.defaultReps ?: 12} reps"
                 val duration = it.defaultDurationSec ?: if (it.defaultReps != null) 35 else 30
-                val media = if (it.gifUrl.isNotBlank()) it.gifUrl else it.thumbnailUrl
+                val media = if (it.gifUrl.isNotBlank()) {
+                    // Remove "exercise_library.csv/" prefix if present and handle asset paths
+                    val cleanPath = it.gifUrl.replace("exercise_library.csv/", "")
+                    cleanPath
+                } else {
+                    val cleanPath = it.thumbnailUrl.replace("exercise_library.csv/", "")
+                    cleanPath
+                }
                 WorkoutExercise(name = it.nameEn, target = target, restSeconds = it.restSec)
                     .copy(durationSeconds = duration, mediaPath = media)
             }

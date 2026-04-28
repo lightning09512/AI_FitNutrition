@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="4dp"
+        android:scrollbarThumbVertical="@color/accent_teal"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="96dp">
+
+            <!-- Header -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:paddingTop="24dp" android:paddingBottom="16dp"
+                android:gravity="center_vertical">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:text="@string/workout"
+                    android:textColor="@color/text_primary" android:textSize="24sp"
+                    android:textStyle="bold" android:fontFamily="sans-serif-medium"/>
+                <TextView android:id="@+id/tv_total_burned"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="0 kcal"
+                    android:textColor="@color/accent_orange" android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/workout_programs"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif"
+                android:letterSpacing="0.1"
+                android:layout_marginBottom="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWorkoutPrograms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginBottom="10dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStartProgram"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/start_selected_program"
+                android:layout_marginBottom="16dp"
+                style="@style/Widget.Material3.Button.OutlinedButton" />
+
+            <!-- Workout Types Chips -->
+            <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:scrollbars="none" android:layout_marginBottom="16dp">
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupWorkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+                    <com.google.android.material.chip.Chip android:id="@+id/chipRunning"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/workout_running" style="@style/Widget.Material3.Chip.Filter"
+                        android:textColor="@color/text_primary"
+                        app:chipBackgroundColor="@color/bg_card" app:chipStrokeColor="@color/bg_card_elevated"/>
+                    <com.google.android.material.chip.Chip android:id="@+id/chipCycling"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/workout_cycling" style="@style/Widget.Material3.Chip.Filter"
+                        android:textColor="@color/text_primary"
+                        app:chipBackgroundColor="@color/bg_card" app:chipStrokeColor="@color/bg_card_elevated"/>
+                    <com.google.android.material.chip.Chip android:id="@+id/chipGym"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/workout_gym" style="@style/Widget.Material3.Chip.Filter"
+                        android:textColor="@color/text_primary"
+                        app:chipBackgroundColor="@color/bg_card" app:chipStrokeColor="@color/bg_card_elevated"/>
+                    <com.google.android.material.chip.Chip android:id="@+id/chipWalking"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/workout_walking" style="@style/Widget.Material3.Chip.Filter"
+                        android:textColor="@color/text_primary"
+                        app:chipBackgroundColor="@color/bg_card" app:chipStrokeColor="@color/bg_card_elevated"/>
+                    <com.google.android.material.chip.Chip android:id="@+id/chipSwimming"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/workout_swimming" style="@style/Widget.Material3.Chip.Filter"
+                        android:textColor="@color/text_primary"
+                        app:chipBackgroundColor="@color/bg_card" app:chipStrokeColor="@color/bg_card_elevated"/>
+                    <com.google.android.material.chip.Chip android:id="@+id/chipYoga"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/workout_yoga" style="@style/Widget.Material3.Chip.Filter"
+                        android:textColor="@color/text_primary"
+                        app:chipBackgroundColor="@color/bg_card" app:chipStrokeColor="@color/bg_card_elevated"/>
+                    <com.google.android.material.chip.Chip android:id="@+id/chipHiit"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/workout_hiit" style="@style/Widget.Material3.Chip.Filter"
+                        android:textColor="@color/text_primary"
+                        app:chipBackgroundColor="@color/bg_card" app:chipStrokeColor="@color/bg_card_elevated"/>
+                </com.google.android.material.chip.ChipGroup>
+            </HorizontalScrollView>
+
+            <!-- Log workout card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" style="@style/Widget.AIFitNutrition.Card">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Log Workout"
+                        android:textColor="@color/text_primary" android:textSize="16sp"
+                        android:textStyle="bold" android:fontFamily="sans-serif-medium"
+                        android:layout_marginBottom="16dp"/>
+
+                    <!-- Duration -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/duration_minutes"
+                        android:textColor="@color/text_secondary" android:textSize="12sp"
+                        android:fontFamily="sans-serif" android:layout_marginBottom="8dp"/>
+                    <com.google.android.material.slider.Slider
+                        android:id="@+id/sliderDuration"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:valueFrom="5" android:valueTo="180" android:value="30"
+                        android:stepSize="5"
+                        app:thumbColor="@color/accent_teal"
+                        app:trackColorActive="@color/accent_teal"
+                        app:trackColorInactive="@color/bg_card_elevated"
+                        android:layout_marginBottom="4dp"/>
+                    <TextView android:id="@+id/tv_duration_val"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="30 min"
+                        android:textColor="@color/accent_teal" android:textSize="14sp"
+                        android:fontFamily="sans-serif-medium" android:layout_marginBottom="16dp"/>
+
+                    <!-- Intensity -->
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="@string/intensity"
+                        android:textColor="@color/text_secondary" android:textSize="12sp"
+                        android:fontFamily="sans-serif" android:layout_marginBottom="8dp"/>
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupIntensity"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        app:singleSelection="true" app:selectionRequired="true"
+                        android:layout_marginBottom="16dp">
+                        <com.google.android.material.chip.Chip android:id="@+id/chipLight"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/intensity_light" style="@style/Widget.Material3.Chip.Filter"
+                            android:textColor="@color/text_primary"
+                            app:chipBackgroundColor="@color/bg_card_elevated"/>
+                        <com.google.android.material.chip.Chip android:id="@+id/chipModerate"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/intensity_moderate" style="@style/Widget.Material3.Chip.Filter"
+                            android:textColor="@color/text_primary" android:checked="true"
+                            app:chipBackgroundColor="@color/bg_card_elevated"/>
+                        <com.google.android.material.chip.Chip android:id="@+id/chipIntense"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="@string/intensity_intense" style="@style/Widget.Material3.Chip.Filter"
+                            android:textColor="@color/text_primary"
+                            app:chipBackgroundColor="@color/bg_card_elevated"/>
+                    </com.google.android.material.chip.ChipGroup>
+
+                    <!-- Estimated burn -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/bg_surface" app:cardCornerRadius="12dp"
+                        app:cardElevation="0dp" android:layout_marginBottom="16dp">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:orientation="horizontal" android:padding="12dp" android:gravity="center_vertical">
+                            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:text="@string/estimated_burn"
+                                android:textColor="@color/text_secondary" android:textSize="13sp"
+                                android:fontFamily="sans-serif"/>
+                            <TextView android:id="@+id/tv_estimated_burn"
+                                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                android:text="~250 kcal"
+                                android:textColor="@color/accent_orange" android:textSize="18sp"
+                                android:fontFamily="sans-serif-medium"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogWorkout"
+                        android:layout_width="match_parent" android:layout_height="56dp"
+                        android:text="Log Workout"
+                        style="@style/Widget.AIFitNutrition.Button.Primary"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Today's workouts -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/today_activity"
+                android:textColor="@color/text_secondary" android:textSize="12sp"
+                android:fontFamily="sans-serif" android:letterSpacing="0.1"
+                android:layout_marginBottom="12dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvWorkouts"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"/>
+
+            <TextView android:id="@+id/tv_no_workouts"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/no_workout_today"
+                android:textColor="@color/text_tertiary" android:textSize="14sp"
+                android:fontFamily="sans-serif" android:gravity="center"
+                android:visibility="gone" android:layout_marginTop="16dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

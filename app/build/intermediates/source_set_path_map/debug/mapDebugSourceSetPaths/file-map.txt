@@ -1,0 +1,65 @@
+com.nhom10.aifitnutrition.app-window-1.0.0-0 C:\Users\light\.gradle\caches\transforms-4\019bc9e85820bea60331d3237082543c\transformed\window-1.0.0\res
+com.nhom10.aifitnutrition.app-lifecycle-viewmodel-release-1 C:\Users\light\.gradle\caches\transforms-4\033ae1e378fabd24dba91123db1a4546\transformed\lifecycle-viewmodel-release\res
+com.nhom10.aifitnutrition.app-navigation-runtime-ktx-2.7.7-2 C:\Users\light\.gradle\caches\transforms-4\06c93a14d838f48f784648bf4b8c802b\transformed\navigation-runtime-ktx-2.7.7\res
+com.nhom10.aifitnutrition.app-sqlite-framework-2.4.0-3 C:\Users\light\.gradle\caches\transforms-4\07f8241bddf1bebf6567c2f58c75a28c\transformed\sqlite-framework-2.4.0\res
+com.nhom10.aifitnutrition.app-appcompat-1.7.0-4 C:\Users\light\.gradle\caches\transforms-4\116c4775b5abfabbae397bffb0284e1c\transformed\appcompat-1.7.0\res
+com.nhom10.aifitnutrition.app-coordinatorlayout-1.1.0-5 C:\Users\light\.gradle\caches\transforms-4\13aaaf3ed550342ce42798ca1a6b0da1\transformed\coordinatorlayout-1.1.0\res
+com.nhom10.aifitnutrition.app-transition-1.5.0-6 C:\Users\light\.gradle\caches\transforms-4\1a016cd89b15cbe49fb8eec3308070fe\transformed\transition-1.5.0\res
+com.nhom10.aifitnutrition.app-lifecycle-viewmodel-ktx-2.8.2-7 C:\Users\light\.gradle\caches\transforms-4\1b279f78a75c127a4eeeaf2b938baaa9\transformed\lifecycle-viewmodel-ktx-2.8.2\res
+com.nhom10.aifitnutrition.app-activity-ktx-1.9.0-8 C:\Users\light\.gradle\caches\transforms-4\2c6c9f4b08e272d63880b8693f3a3baf\transformed\activity-ktx-1.9.0\res
+com.nhom10.aifitnutrition.app-room-runtime-2.6.1-9 C:\Users\light\.gradle\caches\transforms-4\2fc77c5f361734b6ec7a5c386383874d\transformed\room-runtime-2.6.1\res
+com.nhom10.aifitnutrition.app-navigation-ui-ktx-2.7.7-10 C:\Users\light\.gradle\caches\transforms-4\30277fd6e784da2a6782e1767d3cd1d0\transformed\navigation-ui-ktx-2.7.7\res
+com.nhom10.aifitnutrition.app-navigation-ui-2.7.7-11 C:\Users\light\.gradle\caches\transforms-4\32a2ea4dc143fdfe49efb07a9123d35d\transformed\navigation-ui-2.7.7\res
+com.nhom10.aifitnutrition.app-core-ktx-1.13.1-12 C:\Users\light\.gradle\caches\transforms-4\354dc7cc1941c881fa9654abfdb3ec0d\transformed\core-ktx-1.13.1\res
+com.nhom10.aifitnutrition.app-profileinstaller-1.3.1-13 C:\Users\light\.gradle\caches\transforms-4\371f1219cd572ec566bf61f99f154052\transformed\profileinstaller-1.3.1\res
+com.nhom10.aifitnutrition.app-room-ktx-2.6.1-14 C:\Users\light\.gradle\caches\transforms-4\3c56bcd03559f9adfeb4801159261405\transformed\room-ktx-2.6.1\res
+com.nhom10.aifitnutrition.app-lifecycle-livedata-core-ktx-2.8.2-15 C:\Users\light\.gradle\caches\transforms-4\418e7ed3d964f0b3dc1578d480a99f4c\transformed\lifecycle-livedata-core-ktx-2.8.2\res
+com.nhom10.aifitnutrition.app-navigation-common-2.7.7-16 C:\Users\light\.gradle\caches\transforms-4\41e494bcaf9cc376cb1631322a032779\transformed\navigation-common-2.7.7\res
+com.nhom10.aifitnutrition.app-emoji2-views-helper-1.3.0-17 C:\Users\light\.gradle\caches\transforms-4\4946f6880815c9cbcc3bd7ccf568f7bf\transformed\emoji2-views-helper-1.3.0\res
+com.nhom10.aifitnutrition.app-customview-poolingcontainer-1.0.0-18 C:\Users\light\.gradle\caches\transforms-4\4a8c5a1209e7fb7b021bc04f56294c26\transformed\customview-poolingcontainer-1.0.0\res
+com.nhom10.aifitnutrition.app-savedstate-1.2.1-19 C:\Users\light\.gradle\caches\transforms-4\4b016cd0294b942afa078371c69ccb0e\transformed\savedstate-1.2.1\res
+com.nhom10.aifitnutrition.app-lifecycle-livedata-2.8.2-20 C:\Users\light\.gradle\caches\transforms-4\54d7d47f933b9932abe7ad6809cb7a04\transformed\lifecycle-livedata-2.8.2\res
+com.nhom10.aifitnutrition.app-fragment-ktx-1.7.1-21 C:\Users\light\.gradle\caches\transforms-4\5598fdda45810624d4781e67abb3b811\transformed\fragment-ktx-1.7.1\res
+com.nhom10.aifitnutrition.app-work-runtime-2.9.0-22 C:\Users\light\.gradle\caches\transforms-4\58307cf78ab156aee4f8d7a057bb7e6f\transformed\work-runtime-2.9.0\res
+com.nhom10.aifitnutrition.app-lifecycle-service-2.8.2-23 C:\Users\light\.gradle\caches\transforms-4\597b34a13c1b019f4b27fdc9d3a7a3e4\transformed\lifecycle-service-2.8.2\res
+com.nhom10.aifitnutrition.app-activity-1.9.0-24 C:\Users\light\.gradle\caches\transforms-4\5f4d6b7d715821d5b655e68b354e5809\transformed\activity-1.9.0\res
+com.nhom10.aifitnutrition.app-constraintlayout-2.1.4-25 C:\Users\light\.gradle\caches\transforms-4\63218045bbec181440ea59e0772f44e6\transformed\constraintlayout-2.1.4\res
+com.nhom10.aifitnutrition.app-emoji2-1.3.0-26 C:\Users\light\.gradle\caches\transforms-4\641d72107cf59b777c07aa621b32dce0\transformed\emoji2-1.3.0\res
+com.nhom10.aifitnutrition.app-cardview-1.0.0-27 C:\Users\light\.gradle\caches\transforms-4\67356b5ed2d2965e867fd6e160414667\transformed\cardview-1.0.0\res
+com.nhom10.aifitnutrition.app-fragment-1.7.1-28 C:\Users\light\.gradle\caches\transforms-4\67ea1238166927539ccf762c2b1aa5c7\transformed\fragment-1.7.1\res
+com.nhom10.aifitnutrition.app-material-1.12.0-29 C:\Users\light\.gradle\caches\transforms-4\70bca3ba27658cb9e1a6d41e1421623b\transformed\material-1.12.0\res
+com.nhom10.aifitnutrition.app-lifecycle-viewmodel-savedstate-2.8.2-30 C:\Users\light\.gradle\caches\transforms-4\77526b4737694c7b50e4ed85aba42e12\transformed\lifecycle-viewmodel-savedstate-2.8.2\res
+com.nhom10.aifitnutrition.app-savedstate-ktx-1.2.1-31 C:\Users\light\.gradle\caches\transforms-4\789dba5cef3055487405def9d95dcbae\transformed\savedstate-ktx-1.2.1\res
+com.nhom10.aifitnutrition.app-recyclerview-1.3.1-32 C:\Users\light\.gradle\caches\transforms-4\899b4b606dbf9019c85f440e5e7dffaa\transformed\recyclerview-1.3.1\res
+com.nhom10.aifitnutrition.app-drawerlayout-1.1.1-33 C:\Users\light\.gradle\caches\transforms-4\8b31324b48a668abc14a89cdaf0ddd56\transformed\drawerlayout-1.1.1\res
+com.nhom10.aifitnutrition.app-lifecycle-livedata-core-2.8.2-34 C:\Users\light\.gradle\caches\transforms-4\8b3386dee46e43c80935504930c53778\transformed\lifecycle-livedata-core-2.8.2\res
+com.nhom10.aifitnutrition.app-lifecycle-process-2.8.2-35 C:\Users\light\.gradle\caches\transforms-4\8e1a5155a0c8fceb2d4d28801ea0d9b8\transformed\lifecycle-process-2.8.2\res
+com.nhom10.aifitnutrition.app-appcompat-resources-1.7.0-36 C:\Users\light\.gradle\caches\transforms-4\8f3272fe174f2ec51e8e1859a94b9663\transformed\appcompat-resources-1.7.0\res
+com.nhom10.aifitnutrition.app-startup-runtime-1.1.1-37 C:\Users\light\.gradle\caches\transforms-4\94b8e35f0258ece62ac8a0c9334a3154\transformed\startup-runtime-1.1.1\res
+com.nhom10.aifitnutrition.app-navigation-runtime-2.7.7-38 C:\Users\light\.gradle\caches\transforms-4\94c2de076ce014418938214cdf30620b\transformed\navigation-runtime-2.7.7\res
+com.nhom10.aifitnutrition.app-camera-camera2-1.3.3-39 C:\Users\light\.gradle\caches\transforms-4\950341ecd2e1a23aefb25608bb69a1a0\transformed\camera-camera2-1.3.3\res
+com.nhom10.aifitnutrition.app-camera-core-1.3.3-40 C:\Users\light\.gradle\caches\transforms-4\a537aea71e0f0c58db07b4c63d6159b2\transformed\camera-core-1.3.3\res
+com.nhom10.aifitnutrition.app-lifecycle-livedata-ktx-2.8.2-41 C:\Users\light\.gradle\caches\transforms-4\a94594ce1c06072b657fe06294d755dc\transformed\lifecycle-livedata-ktx-2.8.2\res
+com.nhom10.aifitnutrition.app-lifecycle-runtime-ktx-release-42 C:\Users\light\.gradle\caches\transforms-4\aa336a42f441f73f544176a2b88b2864\transformed\lifecycle-runtime-ktx-release\res
+com.nhom10.aifitnutrition.app-navigation-fragment-ktx-2.7.7-43 C:\Users\light\.gradle\caches\transforms-4\ac89f64702c73f3f2d4071a3948156f7\transformed\navigation-fragment-ktx-2.7.7\res
+com.nhom10.aifitnutrition.app-slidingpanelayout-1.2.0-44 C:\Users\light\.gradle\caches\transforms-4\ace1dc6358347962d60eb2b7601b0b27\transformed\slidingpanelayout-1.2.0\res
+com.nhom10.aifitnutrition.app-core-runtime-2.2.0-45 C:\Users\light\.gradle\caches\transforms-4\b364d63e7a20530668f40cd030e32529\transformed\core-runtime-2.2.0\res
+com.nhom10.aifitnutrition.app-camera-lifecycle-1.3.3-46 C:\Users\light\.gradle\caches\transforms-4\b6f93fa31154dba6389d493bf57c6e74\transformed\camera-lifecycle-1.3.3\res
+com.nhom10.aifitnutrition.app-sqlite-2.4.0-47 C:\Users\light\.gradle\caches\transforms-4\b8f266df1ebeef9cb830c20c01301923\transformed\sqlite-2.4.0\res
+com.nhom10.aifitnutrition.app-core-1.13.1-48 C:\Users\light\.gradle\caches\transforms-4\caf2c29568957a9d073e5e4dd639dd02\transformed\core-1.13.1\res
+com.nhom10.aifitnutrition.app-navigation-fragment-2.7.7-49 C:\Users\light\.gradle\caches\transforms-4\cd785435e3ff5a7efe0ac74eb8e6057c\transformed\navigation-fragment-2.7.7\res
+com.nhom10.aifitnutrition.app-camera-video-1.3.3-50 C:\Users\light\.gradle\caches\transforms-4\d5568ca2d6d6ff026bc7436b77c96f20\transformed\camera-video-1.3.3\res
+com.nhom10.aifitnutrition.app-glide-4.16.0-51 C:\Users\light\.gradle\caches\transforms-4\dfbcbc22508a1ab12179cd8180d034de\transformed\glide-4.16.0\res
+com.nhom10.aifitnutrition.app-annotation-experimental-1.4.0-52 C:\Users\light\.gradle\caches\transforms-4\e13e6b0b949e4c1ced3ed20c83bc674c\transformed\annotation-experimental-1.4.0\res
+com.nhom10.aifitnutrition.app-viewpager2-1.1.0-53 C:\Users\light\.gradle\caches\transforms-4\e26a84d95b222673ba5bc34b34d7aab6\transformed\viewpager2-1.1.0\res
+com.nhom10.aifitnutrition.app-lifecycle-runtime-release-54 C:\Users\light\.gradle\caches\transforms-4\e3d44822e1d9128195efda946c35b87e\transformed\lifecycle-runtime-release\res
+com.nhom10.aifitnutrition.app-navigation-common-ktx-2.7.7-55 C:\Users\light\.gradle\caches\transforms-4\ecf04761ffee2e398643c6119f762715\transformed\navigation-common-ktx-2.7.7\res
+com.nhom10.aifitnutrition.app-camera-view-1.3.3-56 C:\Users\light\.gradle\caches\transforms-4\f32a18a76a013b5f0230fe64d23eb954\transformed\camera-view-1.3.3\res
+com.nhom10.aifitnutrition.app-work-runtime-ktx-2.9.0-57 C:\Users\light\.gradle\caches\transforms-4\f713c3a92491bc82e469d58cca2e66f8\transformed\work-runtime-ktx-2.9.0\res
+com.nhom10.aifitnutrition.app-pngs-58 D:\hoc\LTDD\AI FitNutrition\app\build\generated\res\pngs\debug
+com.nhom10.aifitnutrition.app-resValues-59 D:\hoc\LTDD\AI FitNutrition\app\build\generated\res\resValues\debug
+com.nhom10.aifitnutrition.app-packageDebugResources-60 D:\hoc\LTDD\AI FitNutrition\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.nhom10.aifitnutrition.app-packageDebugResources-61 D:\hoc\LTDD\AI FitNutrition\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.nhom10.aifitnutrition.app-debug-62 D:\hoc\LTDD\AI FitNutrition\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.nhom10.aifitnutrition.app-debug-63 D:\hoc\LTDD\AI FitNutrition\app\src\debug\res
+com.nhom10.aifitnutrition.app-main-64 D:\hoc\LTDD\AI FitNutrition\app\src\main\res

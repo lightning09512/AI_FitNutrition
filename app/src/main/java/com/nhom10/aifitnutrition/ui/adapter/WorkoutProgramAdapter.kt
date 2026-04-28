@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.nhom10.aifitnutrition.databinding.ItemWorkoutProgramBinding
 import com.nhom10.aifitnutrition.ui.workout.WorkoutProgram
 
@@ -36,6 +37,19 @@ class WorkoutProgramAdapter(
             val isSelected = item.id == selectedId
             root.strokeWidth = if (isSelected) 3 else 1
             root.alpha = if (isSelected) 1f else 0.9f
+
+            // Load image for the first exercise in the program
+            val firstExercise = item.exercises.firstOrNull()
+            if (firstExercise != null && firstExercise.mediaPath.isNotBlank()) {
+                Glide.with(holder.itemView.context)
+                    .load(firstExercise.mediaPath)
+                    .placeholder(com.nhom10.aifitnutrition.R.drawable.ic_workout)
+                    .error(com.nhom10.aifitnutrition.R.drawable.ic_workout)
+                    .centerCrop()
+                    .into(ivProgramImage)
+            } else {
+                ivProgramImage.setImageResource(com.nhom10.aifitnutrition.R.drawable.ic_workout)
+            }
 
             root.setOnClickListener {
                 selectedId = item.id

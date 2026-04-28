@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\fragment_workout_player.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_workout_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\item_food_log.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\item_food_log.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\fragment_workout.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_workout.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\item_workout.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\item_workout.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\item_workout_program.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\item_workout_program.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\fragment_food_log.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_food_log.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\fragment_camera.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\item_chat_message.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\item_chat_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\fragment_chat.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-mergeDebugResources-61:\\layout\\activity_onboarding.xml",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "com.nhom10.aifitnutrition.app-mergeDebugResources-61:/layout/fragment_chat.xml",
+        "source": "com.nhom10.aifitnutrition.app-main-64:/layout/fragment_chat.xml"
+    }
+]

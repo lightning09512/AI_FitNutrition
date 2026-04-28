@@ -39,8 +39,8 @@ class OpenRouterService(apiKey: String) {
 
             val messages = JSONArray()
             val systemContent = buildString {
-                append("You are FitBot, an expert AI health and fitness coach.")
-                append(" Reply concise, practical, safe advice.")
+                append("Bạn là FitBot, trợ lý AI chuyên về sức khỏe và thể hình.")
+                append(" Luôn trả lời hoàn toàn bằng tiếng Việt, ngắn gọn, thực tế, an toàn và dễ hiểu.")
                 if (userContext.isNotBlank()) append(" $userContext")
             }
             messages.put(JSONObject().put("role", "system").put("content", systemContent))
@@ -89,6 +89,7 @@ class OpenRouterService(apiKey: String) {
             }
             Result.success(content)
         } catch (e: Exception) {
+            android.util.Log.e("OpenRouterService", "OpenRouter error", e)
             Result.failure(IllegalStateException(e.message ?: "Unknown OpenRouter error.", e))
         }
     }

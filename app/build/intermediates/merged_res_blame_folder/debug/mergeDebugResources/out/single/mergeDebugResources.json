@@ -1,0 +1,178 @@
+[
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_bg_exercise_placeholder.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\bg_exercise_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_dot_protein.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\dot_protein.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_item_workout.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\item_workout.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_ic_profile.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\ic_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_bg_capture_inner.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\bg_capture_inner.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\xml_locale_config.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\xml\\locale_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\anim_fade_out.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\anim_slide_up.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\anim\\slide_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_bg_chat_user.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\bg_chat_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_bg_food_thumb.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\bg_food_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_ic_chat.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\ic_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_ic_info.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\ic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_item_chat_message.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\item_chat_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\xml\\network_security_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\color_nav_item_color.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\color\\nav_item_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_bg_chat_ai.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\bg_chat_ai.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\xml_file_paths.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\xml\\file_paths.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_fragment_dashboard.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_fragment_workout_player.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_workout_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_dot_fat.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\dot_fat.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\ic_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_fragment_workout.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_workout.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_ic_workout.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\ic_workout.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_ic_food.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\ic_food.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_ic_home.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_fragment_food_log.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_food_log.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_dot_carbs.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\dot_carbs.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_ic_splash_logo.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\ic_splash_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_fragment_camera.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_activity_onboarding.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_bg_capture_button.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\bg_capture_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\drawable_bg_stat_box.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\drawable\\bg_stat_box.xml"
+    },
+    {
+        "merged": "com.nhom10.aifitnutrition.app-debug-62:/layout_fragment_chat.xml.flat",
+        "source": "com.nhom10.aifitnutrition.app-main-64:/layout/fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_item_workout_program.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\item_workout_program.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_item_food_log.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\item_food_log.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\layout_fragment_chat.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-debug-62:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\light\\.gradle\\daemon\\8.7\\com.nhom10.aifitnutrition.app-main-64:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    }
+]

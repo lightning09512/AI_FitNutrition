@@ -6,6 +6,7 @@ import android.view.inputmethod.EditorInfo
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.nhom10.aifitnutrition.R
 import com.nhom10.aifitnutrition.databinding.FragmentChatBinding
 import com.nhom10.aifitnutrition.ui.adapter.ChatAdapter
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -55,16 +56,16 @@ class ChatFragment : Fragment() {
         }
 
         // Suggested prompts
-        binding.chipSuggest1.setOnClickListener { sendPredefined("Can you suggest a workout plan for my fitness goal?") }
-        binding.chipSuggest2.setOnClickListener { sendPredefined("What are some healthy meal ideas for my daily goal?") }
-        binding.chipSuggest3.setOnClickListener { sendPredefined("Can you analyze my progress and give me tips to improve?") }
+        binding.chipSuggest1.setOnClickListener { sendPredefined("Hãy gợi ý cho tôi một kế hoạch tập luyện phù hợp với mục tiêu hiện tại.") }
+        binding.chipSuggest2.setOnClickListener { sendPredefined("Hãy gợi ý cho tôi các bữa ăn lành mạnh phù hợp với mục tiêu hằng ngày.") }
+        binding.chipSuggest3.setOnClickListener { sendPredefined("Hãy phân tích tiến độ hiện tại và cho tôi lời khuyên để cải thiện.") }
 
         binding.btnClearChat.setOnClickListener {
             MaterialAlertDialogBuilder(requireContext())
-                .setTitle("Clear Chat")
-                .setMessage("Clear all chat history?")
-                .setPositiveButton("Clear") { _, _ -> viewModel.clearHistory() }
-                .setNegativeButton("Cancel", null)
+                .setTitle(getString(R.string.chat_clear_title))
+                .setMessage(getString(R.string.chat_clear_message))
+                .setPositiveButton(getString(R.string.chat_clear)) { _, _ -> viewModel.clearHistory() }
+                .setNegativeButton(getString(R.string.cancel), null)
                 .show()
         }
     }

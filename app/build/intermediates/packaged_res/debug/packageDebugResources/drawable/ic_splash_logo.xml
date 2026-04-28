@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Professional Abstract Geometric Logo -->
+    <path
+        android:fillColor="#00D4AA"
+        android:pathData="M50,10 C72,10 90,28 90,50 C90,72 72,90 50,90 C28,90 10,72 10,50 C10,28 28,10 50,10 Z M50,22 C34.5,22 22,34.5 22,50 C22,65.5 34.5,78 50,78 C65.5,78 78,65.5 78,50 C78,34.5 65.5,22 50,22 Z"/>
+    <path
+        android:fillColor="#00D4AA"
+        android:pathData="M50,30 L65,50 L50,70 L35,50 Z"/>
+</vector>
+

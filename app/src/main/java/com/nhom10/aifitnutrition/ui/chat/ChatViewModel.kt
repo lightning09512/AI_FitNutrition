@@ -2,6 +2,7 @@ package com.nhom10.aifitnutrition.ui.chat
 
 import android.app.Application
 import androidx.lifecycle.*
+import com.nhom10.aifitnutrition.R
 import com.nhom10.aifitnutrition.BuildConfig
 import com.nhom10.aifitnutrition.ai.GeminiService
 import com.nhom10.aifitnutrition.ai.OpenRouterService
@@ -35,7 +36,7 @@ class ChatViewModel(application: Application) : AndroidViewModel(application) {
                 chatRepo.insertMessage(
                     ChatMessage(
                         role = "model",
-                        content = "Hello! I'm your AI Health Coach powered by Gemini. 🏋️‍♂️\n\nI can help you with:\n• Nutrition advice & meal planning\n• Workout tips & motivation\n• Progress tracking insights\n• Calorie & macro guidance\n\nHow can I help you today?"
+                        content = getApplication<Application>().getString(R.string.ai_greeting)
                     )
                 )
             }
@@ -44,44 +45,56 @@ class ChatViewModel(application: Application) : AndroidViewModel(application) {
 
     fun sendMessage(userText: String) {
         viewModelScope.launch {
-            // Save user message
-            val userMsg = ChatMessage(role = "user", content = userText)
-            chatRepo.insertMessage(userMsg)
+            try {
+                // Save user message
+                val userMsg = ChatMessage(role = "user", content = userText)
+                chatRepo.insertMessage(userMsg)
 
-            _isTyping.value = true
+                _isTyping.value = true
 
-            // Get recent history for context
-            val history = chatRepo.getRecentMessages(10)
-                .map { it.role to it.content }
+                // Get recent history for context
+                val history = chatRepo.getRecentMessages(10)
+                    .map { it.role to it.content }
 
-            // Get user profile for context
-            val profile = nutritionRepo.getUserProfileOnce()
-            val userContext = profile?.let {
-                "User context: Name=${it.name}, Goal=${it.goalType}, Daily calorie goal=${it.dailyCalorieGoal}kcal, Weight=${it.weightKg}kg"
-            } ?: ""
+                // Get user profile for context
+                val profile = nutritionRepo.getUserProfileOnce()
+                val userContext = profile?.let {
+                    "Thông tin người dùng: Tên=${it.name}, Mục tiêu=${it.goalType}, Mục tiêu calo mỗi ngày=${it.dailyCalorieGoal}kcal, Cân nặng=${it.weightKg}kg. Luôn trả lời bằng tiếng Việt tự nhiên, dễ hiểu."
+                } ?: ""
 
-            val geminiResult = geminiService.sendChatMessage(userText, history, userContext)
-            val result = if (geminiResult.isSuccess) {
-                geminiResult
-            } else {
-                val fallback = openRouterService.sendChatMessage(userText, history, userContext)
-                if (fallback.isSuccess) {
-                    fallback
+                android.util.Log.d("ChatViewModel", "Sending message: $userText")
+                android.util.Log.d("ChatViewModel", "History size: ${history.size}")
+                android.util.Log.d("ChatViewModel", "User context: $userContext")
+
+                val geminiResult = geminiService.sendChatMessage(userText, history, userContext)
+                val result = if (geminiResult.isSuccess) {
+                    geminiResult
                 } else {
-                    val geminiError = geminiResult.exceptionOrNull()?.message ?: "Unknown Gemini error"
-                    val openRouterError = fallback.exceptionOrNull()?.message ?: "OpenRouter fallback not configured"
-                    Result.failure(IllegalStateException("$geminiError | Fallback failed: $openRouterError"))
+                    android.util.Log.w("ChatViewModel", "Gemini failed, trying OpenRouter")
+                    val fallback = openRouterService.sendChatMessage(userText, history, userContext)
+                    if (fallback.isSuccess) {
+                        fallback
+                    } else {
+                        val geminiError = geminiResult.exceptionOrNull()?.message ?: "Unknown Gemini error"
+                        val openRouterError = fallback.exceptionOrNull()?.message ?: "OpenRouter fallback not configured"
+                        Result.failure(IllegalStateException("$geminiError | Fallback failed: $openRouterError"))
+                    }
                 }
-            }
-            _isTyping.value = false
+                _isTyping.value = false
 
-            val responseText = if (result.isSuccess) {
-                result.getOrThrow()
-            } else {
-                val detail = result.exceptionOrNull()?.message ?: "Unknown error"
-                "Xin lỗi, AI đang gặp lỗi: $detail"
+                val responseText = if (result.isSuccess) {
+                    result.getOrThrow()
+                } else {
+                    val detail = result.exceptionOrNull()?.message ?: "Unknown error"
+                    android.util.Log.e("ChatViewModel", "AI response failed: $detail")
+                    "Xin lỗi, AI đang gặp lỗi: $detail"
+                }
+                chatRepo.insertMessage(ChatMessage(role = "model", content = responseText))
+            } catch (e: Exception) {
+                _isTyping.value = false
+                android.util.Log.e("ChatViewModel", "Unexpected error in sendMessage", e)
+                chatRepo.insertMessage(ChatMessage(role = "model", content = "Xin lỗi, có lỗi không mong muốn: ${e.message}"))
             }
-            chatRepo.insertMessage(ChatMessage(role = "model", content = responseText))
         }
     }
 

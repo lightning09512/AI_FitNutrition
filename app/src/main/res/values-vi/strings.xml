@@ -75,12 +75,17 @@
     <string name="ai_coach">AI Coach</string>
     <string name="powered_by_gemini">Được hỗ trợ bởi Gemini</string>
     <string name="chat_clear">Xóa</string>
-    <string name="chat_suggest_workout">Gợi ý bài tập</string>
+    <string name="chat_suggest_workout">Gợi ý bài tập cho tôi</string>
     <string name="chat_meal_ideas">Gợi ý bữa ăn theo mục tiêu</string>
     <string name="chat_analyze_progress">Phân tích tiến độ của tôi</string>
     <string name="fitbot_thinking">FitBot đang suy nghĩ…</string>
-    <string name="chat_hint">Hỏi về sức khỏe của bạn…</string>
-    <string name="ai_greeting">Xin chào! Tôi là AI Health Coach được hỗ trợ bởi Gemini. Tôi có thể giúp gì cho bạn?</string>
+    <string name="chat_hint">Nhập câu hỏi sức khỏe hoặc dinh dưỡng…</string>
+    <string name="ai_greeting">Xin chào! Tôi là FitBot, trợ lý sức khỏe AI của bạn. Tôi có thể tư vấn dinh dưỡng, tập luyện và theo dõi tiến độ cho bạn bằng tiếng Việt. Bạn muốn hỏi gì hôm nay?</string>
+    <string name="chat_clear_title">Xóa đoạn chat</string>
+    <string name="chat_clear_message">Bạn có chắc muốn xóa toàn bộ lịch sử trò chuyện không?</string>
+    <string name="chat_assistant_name">FitBot</string>
+    <string name="chat_input_label">Nhắn với FitBot</string>
+    <string name="chat_send">Gửi</string>
 
     <!-- Profile -->
     <string name="profile">Hồ sơ</string>

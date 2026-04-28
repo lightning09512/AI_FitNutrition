@@ -22,9 +22,10 @@ class GeminiService(apiKey: String) {
 
     private val normalizedApiKey = apiKey.trim()
     private val modelCandidates = listOf(
-        "gemini-1.5-flash-latest",
-        "gemini-flash-latest",
-        "gemini-1.5-flash"
+        "gemini-1.5-flash",
+        "gemini-1.5-flash-8b",
+        "gemini-1.5-pro",
+        "gemini-pro"
     )
 
     private fun buildVisionModel(modelName: String) = GenerativeModel(
@@ -121,9 +122,10 @@ class GeminiService(apiKey: String) {
             }
 
             val systemContext = """
-                You are an expert AI health and fitness coach named FitBot.
-                You provide personalized, science-based nutrition and fitness advice.
-                Be concise, encouraging, and practical. Use emojis sparingly.
+                Bạn là FitBot, một huấn luyện viên AI chuyên về sức khỏe và thể hình.
+                Hãy luôn trả lời hoàn toàn bằng tiếng Việt.
+                Đưa ra lời khuyên cá nhân hóa, dựa trên kiến thức khoa học, ngắn gọn, dễ hiểu và thực tế.
+                Giọng văn thân thiện, động viên, không dài dòng. Chỉ dùng emoji khi thật sự cần.
                 $userContext
             """.trimIndent()
 
@@ -132,17 +134,19 @@ class GeminiService(apiKey: String) {
                 append("\n\n")
                 // Add recent history
                 conversationHistory.takeLast(4).forEach { (role, content) ->
-                    val roleLabel = if (role == "user") "User" else "Assistant"
+                    val roleLabel = if (role == "user") "Người dùng" else "Trợ lý"
                     append("$roleLabel: $content\n")
                 }
-                append("User: $userMessage\nAssistant:")
+                append("Người dùng: $userMessage\nTrợ lý:")
             }
 
             val response = generateChatWithFallback(fullPrompt)
             val text = response.text ?: "I can continue, but the answer was truncated. Please ask me to continue."
             Result.success(text.trim())
         } catch (e: Exception) {
-            Result.failure(IllegalStateException(mapGeminiError(e), e))
+            val errorMsg = mapGeminiError(e)
+            android.util.Log.e("GeminiService", "Chat error: $errorMsg", e)
+            Result.failure(IllegalStateException(errorMsg, e))
         }
     }
 

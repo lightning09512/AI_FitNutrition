@@ -14,6 +14,7 @@ import com.nhom10.aifitnutrition.data.model.WorkoutLog
 import com.nhom10.aifitnutrition.databinding.FragmentWorkoutBinding
 import com.nhom10.aifitnutrition.ui.adapter.WorkoutAdapter
 import com.nhom10.aifitnutrition.ui.adapter.WorkoutProgramAdapter
+import com.nhom10.aifitnutrition.ui.workout.WorkoutProgram
 import com.nhom10.aifitnutrition.util.DateUtils
 
 class WorkoutFragment : Fragment() {
