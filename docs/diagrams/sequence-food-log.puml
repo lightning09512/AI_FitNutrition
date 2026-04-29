@@ -1,0 +1,26 @@
+@startuml
+title Sequence - Ghi bữa ăn và cập nhật Dashboard
+
+actor "Người dùng" as User
+participant "FoodLogFragment" as View
+participant "FoodViewModel" as VM
+participant "NutritionRepository" as Repo
+participant "FoodLogDao" as DAO
+database "Room DB" as DB
+participant "DashboardViewModel" as DVM
+
+User -> View : Nhập món ăn + macro\nnhấn Lưu
+View -> VM : insertFoodLog(foodLog)
+VM -> Repo : insertFoodLog(foodLog)
+Repo -> DAO : insert(foodLog)
+DAO -> DB : INSERT food_logs
+DB --> DAO : id
+DAO --> Repo : id
+Repo --> VM : done
+VM --> View : snackbarMessage = "Food logged successfully"
+
+DB -> DAO : Notify data changed
+DAO --> DVM : Flow total calories/protein/carb/fat
+DVM --> View : LiveData cập nhật UI dashboard
+
+@enduml

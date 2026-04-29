@@ -1,0 +1,90 @@
+@startuml
+!theme plain
+skinparam linetype ortho
+skinparam roundcorner 5
+skinparam shadowing false
+skinparam handwritten false
+skinparam class {
+    BackgroundColor white
+    ArrowColor #263238
+    BorderColor #263238
+}
+
+entity "UserProfile" as user_profile {
+    * id : Int <<PK>>
+    --
+    name : String
+    ageYears : Int
+    heightCm : Float
+    weightKg : Float
+    goalType : String
+    targetWeightKg : Float
+    dailyCalorieGoal : Int
+    proteinGoalG : Float
+    carbsGoalG : Float
+    fatGoalG : Float
+    waterGoalMl : Int
+    activityLevel : String
+    gender : String
+}
+
+entity "FoodLog" as food_logs {
+    * id : Long <<PK>>
+    --
+    mealType : String
+    foodName : String
+    calories : Int
+    proteinG : Float
+    carbsG : Float
+    fatG : Float
+    portionGrams : Float
+    imageUri : String
+    date : String
+    timestamp : Long
+    isAiAnalyzed : Boolean
+}
+
+entity "WorkoutLog" as workout_logs {
+    * id : Long <<PK>>
+    --
+    workoutType : String
+    durationMinutes : Int
+    caloriesBurned : Int
+    intensity : String
+    notes : String
+    date : String
+    timestamp : Long
+}
+
+entity "WaterLog" as water_logs {
+    * id : Long <<PK>>
+    --
+    amountMl : Int
+    date : String
+    timestamp : Long
+}
+
+entity "WeightLog" as weight_logs {
+    * id : Long <<PK>>
+    --
+    weightKg : Float
+    date : String
+    timestamp : Long
+}
+
+entity "ChatMessage" as chat_messages {
+    * id : Long <<PK>>
+    --
+    role : String
+    content : String
+    timestamp : Long
+}
+
+' Relationships (Conceptual since it's a single-user app)
+user_profile ||--o{ food_logs : "owns"
+user_profile ||--o{ workout_logs : "owns"
+user_profile ||--o{ water_logs : "owns"
+user_profile ||--o{ weight_logs : "owns"
+user_profile ||--o{ chat_messages : "owns"
+
+@enduml

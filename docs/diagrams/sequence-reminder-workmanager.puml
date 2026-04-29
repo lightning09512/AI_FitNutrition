@@ -1,0 +1,33 @@
+@startuml
+title Sequence - Thiết lập và thực thi nhắc nhở định kỳ
+
+actor "Người dùng" as User
+participant "MainActivity" as Main
+participant "WorkManager" as WM
+participant "WaterReminderWorker" as WaterW
+participant "MealReminderWorker" as MealW
+participant "NotificationHelper" as Noti
+participant "Android OS" as OS
+
+User -> Main : Mở ứng dụng
+Main -> Main : checkNotificationPermissionAndSetup()
+
+alt Quyền thông báo đã cấp
+  Main -> WM : enqueueUniquePeriodicWork("water_reminder")
+  Main -> MealW : scheduleNextMealReminders(context)
+else Chưa cấp quyền
+  Main -> User : Yêu cầu POST_NOTIFICATIONS
+  User --> Main : Cho phép
+  Main -> WM : enqueueUniquePeriodicWork("water_reminder")
+  Main -> MealW : scheduleNextMealReminders(context)
+end
+
+OS -> WaterW : Trigger định kỳ (2 giờ/lần)
+WaterW -> Noti : show water reminder notification
+Noti -> OS : Hiển thị notification
+
+OS -> MealW : Trigger theo lịch bữa ăn
+MealW -> Noti : show meal reminder notification
+Noti -> OS : Hiển thị notification
+
+@enduml

@@ -1,0 +1,77 @@
+@startuml AI_FitNutrition_ERD
+
+!theme plain
+skinparam classAttributeIconSize 0
+skinparam shadowing false
+
+entity UserProfile {
+    *id: int PK
+    *name: string
+    *ageYears: int
+    *heightCm: float
+    *weightKg: float
+    *goalType: string
+    *targetWeightKg: float
+    *dailyCalorieGoal: int
+    *proteinGoalG: float
+    *carbsGoalG: float
+    *fatGoalG: float
+    *waterGoalMl: int
+    *activityLevel: string
+    *gender: string
+}
+
+entity FoodLogs {
+    *id: long PK
+    *mealType: string
+    *foodName: string
+    *calories: int
+    *proteinG: float
+    *carbsG: float
+    *fatG: float
+    *portionGrams: float
+    *imageUri: string
+    *date: string
+    *timestamp: long
+    *isAiAnalyzed: boolean
+}
+
+entity WorkoutLogs {
+    *id: long PK
+    *workoutType: string
+    *durationMinutes: int
+    *caloriesBurned: int
+    *intensity: string
+    *notes: string
+    *date: string
+    *timestamp: long
+}
+
+entity WaterLogs {
+    *id: long PK
+    *amountMl: int
+    *date: string
+    *timestamp: long
+}
+
+entity WeightLogs {
+    *id: long PK
+    *weightKg: float
+    *date: string
+    *timestamp: long
+}
+
+entity ChatMessages {
+    *id: long PK
+    *role: string
+    *content: string
+    *timestamp: long
+}
+
+UserProfile ||--o{ FoodLogs : "logs food for"
+UserProfile ||--o{ WorkoutLogs : "logs workouts for"
+UserProfile ||--o{ WaterLogs : "logs water for"
+UserProfile ||--o{ WeightLogs : "logs weight for"
+UserProfile ||--o{ ChatMessages : "chats with"
+
+@enduml

@@ -1,0 +1,49 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam usecase {
+  BackgroundColor #F5F7FF
+  BorderColor #3F51B5
+}
+
+actor "Người dùng" as User
+actor "Dịch vụ AI\n(Gemini/OpenRouter)" as AI
+actor "Hệ điều hành Android" as OS
+
+rectangle "AI FitNutrition" {
+  usecase "Quản lý hồ sơ\ncá nhân" as UC_Profile
+  usecase "Ghi bữa ăn\n(Food Log)" as UC_FoodLog
+  usecase "Phân tích món ăn\ntừ ảnh" as UC_FoodAI
+  usecase "Ghi lượng nước\nuống" as UC_Water
+  usecase "Theo dõi Dashboard\ncalo/macro" as UC_Dashboard
+  usecase "Ghi buổi tập\nWorkout Log" as UC_WorkoutLog
+  usecase "Chạy bài tập\nWorkout Player" as UC_WorkoutPlayer
+  usecase "Theo dõi cân nặng\n& tiến độ" as UC_Weight
+  usecase "Trò chuyện AI Coach\n(FitBot)" as UC_Chat
+  usecase "Xuất báo cáo PDF" as UC_PDF
+  usecase "Đặt nhắc nhở\nuống nước/bữa ăn" as UC_Reminder
+  usecase "Nhận thông báo\nđịnh kỳ" as UC_Notify
+}
+
+User --> UC_Profile
+User --> UC_FoodLog
+User --> UC_Water
+User --> UC_Dashboard
+User --> UC_WorkoutLog
+User --> UC_WorkoutPlayer
+User --> UC_Weight
+User --> UC_Chat
+User --> UC_PDF
+User --> UC_Reminder
+
+UC_FoodAI ..> UC_FoodLog : <<extend>>
+User --> UC_FoodAI
+
+UC_Chat --> AI
+UC_FoodAI --> AI
+
+UC_Reminder --> OS
+OS --> UC_Notify
+User --> UC_Notify
+
+@enduml

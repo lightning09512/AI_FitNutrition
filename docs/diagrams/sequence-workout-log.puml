@@ -1,0 +1,33 @@
+@startuml
+title Sequence - Ghi buổi tập và tính calo tiêu hao
+
+actor "Người dùng" as User
+participant "WorkoutFragment" as View
+participant "WorkoutViewModel" as VM
+participant "NetCaloriesCalculator" as Calc
+participant "FitnessRepository" as Repo
+participant "WorkoutLogDao" as DAO
+database "Room DB" as DB
+participant "DashboardViewModel" as DVM
+
+User -> View : Nhập loại bài tập,\nthời lượng, cường độ
+View -> VM : estimateCalories(...)
+VM -> Calc : estimateCaloriesBurned(...)
+Calc --> VM : caloriesBurned
+VM --> View : Hiển thị calo ước tính
+
+User -> View : Nhấn Lưu buổi tập
+View -> VM : insertWorkout(workoutLog)
+VM -> Repo : insertWorkout(workoutLog)
+Repo -> DAO : insert(workoutLog)
+DAO -> DB : INSERT workout_logs
+DB --> DAO : id
+DAO --> Repo : id
+Repo --> VM : done
+VM --> View : snackbar "Workout logged"
+
+DB -> DAO : Notify data changed
+DAO --> DVM : Flow totalCaloriesBurned
+DVM --> View : Dashboard cập nhật calo còn lại
+
+@enduml

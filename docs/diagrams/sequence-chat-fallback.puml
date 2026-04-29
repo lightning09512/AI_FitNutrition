@@ -1,0 +1,48 @@
+@startuml
+title Sequence - Chat AI với cơ chế fallback
+
+actor "Người dùng" as User
+participant "ChatFragment" as View
+participant "ChatViewModel" as VM
+participant "ChatRepository" as ChatRepo
+participant "NutritionRepository" as NutriRepo
+participant "GeminiService" as Gemini
+participant "OpenRouterService" as OR
+database "Room DB" as DB
+
+User -> View : Gửi câu hỏi
+View -> VM : sendMessage(userText)
+VM -> ChatRepo : insertMessage(role=user)
+ChatRepo -> DB : INSERT chat_messages
+
+VM -> ChatRepo : getRecentMessages(10)
+ChatRepo -> DB : SELECT recent messages
+DB --> ChatRepo : history
+ChatRepo --> VM : history
+
+VM -> NutriRepo : getUserProfileOnce()
+NutriRepo -> DB : SELECT user_profile
+DB --> NutriRepo : profile
+NutriRepo --> VM : profile
+
+VM -> Gemini : sendChatMessage(...)
+alt Gemini thành công
+  Gemini --> VM : Result.success(response)
+else Gemini lỗi
+  Gemini --> VM : Result.failure(error)
+  VM -> OR : sendChatMessage(...)
+  alt OpenRouter thành công
+    OR --> VM : Result.success(response)
+  else OpenRouter lỗi
+    OR --> VM : Result.failure(error)
+    VM -> VM : tạo message lỗi thân thiện
+  end
+end
+
+VM -> ChatRepo : insertMessage(role=model, content=response)
+ChatRepo -> DB : INSERT chat_messages
+DB --> ChatRepo : done
+ChatRepo --> VM : done
+VM --> View : LiveData messages cập nhật danh sách chat
+
+@enduml
